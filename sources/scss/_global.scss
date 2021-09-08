@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+/* Global styles */
+
+/* Responsive font-size and rem unit */
+html {font-size: 16px}
+@media screen and (min-width: 576px){html{font-size: 104%}} //16px + 4% de 16px
+@media screen and (min-width: 768px){html{font-size: 108%}}
+@media screen and (min-width: 992px){html{font-size: 112%}} 
+@media screen and (min-width: 1200px){html{font-size: 116%}} 
+@media screen and (min-width: 1400px){html{font-size: 120%}}
+
+/* Points de rupture responsive */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+*::selection {
+    background-color: #000;
+    color: blue;
+}
